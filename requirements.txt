@@ -1,0 +1,10 @@
+streamlit
+PyPDF2
+google-generativeai
+requests
+beautifulsoup4
+faiss-cpu
+sentence-transformers
+numpy
+python-dotenv
+serpapi
