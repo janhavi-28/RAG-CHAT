@@ -1,5 +1,12 @@
 import os
-print("SERPAPI_API_KEY:", os.getenv("SERPAPI_API_KEY"))
+import streamlit as st
+
+# Load Streamlit Cloud secrets into environment variables
+try:
+    for k, v in st.secrets.items():
+        os.environ[k] = v
+except Exception:
+    pass
 
 from dotenv import load_dotenv
 load_dotenv()
